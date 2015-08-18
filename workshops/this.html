@@ -1,0 +1,14 @@
+var Portland = {
+	bridges: 12,
+	log: function(){
+		console.log('there are ' + this.bridges + "in Portland");
+	}
+}
+
+function log(){
+	console.log(this.bridges);
+}
+
+Portland.foo = log;
+
+Portland.foo();

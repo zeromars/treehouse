@@ -1,0 +1,195 @@
+/* --------------------------
+  BASE 
+--------------------------- */
+
+body {
+  padding-top: 5em;
+}
+
+.icons {
+	transition: .3s ease-out;
+	/*transform-origin: 200px 50px; for firefox, use cx and cy values of the circle*/
+	transform-origin: 50% 50%;
+}
+
+.icon-set{
+	width: 33.32%;
+	float: left;
+}
+
+body {
+  padding-top: 60px;
+}
+
+svg.badge {
+	margin: auto;
+  	display: block;
+}
+svg.tree {
+	display: block;
+	margin: 2em auto 0;
+	width: 40%;
+}
+
+/* --------------------------
+  GEAR
+--------------------------- */
+.gear{
+
+}
+.gear:hover .gear-icon{
+	transform: rotate(45deg) scale(1.3);	
+}
+.gear-bg{
+	
+}
+.gear-icon{
+}
+.gear-bg:hover{
+	fill: #3881cc;
+}
+.gear-icon:hover{
+
+}
+/* --------------------------
+  HAMMER
+--------------------------- */
+.hammer{
+
+}
+.hammer:hover .hammer-icon{
+	transform: rotate(45deg) scale(1.1);	
+}
+.hammer-bg{
+	stroke: #fee16e;
+}
+.hammer-icon{
+}
+.hammer-bg:hover{
+	fill: #feae6e;
+	stroke-width: 8;
+}
+.hammer-icon:hover{
+
+}
+/* --------------------------
+  HEART
+--------------------------- */
+.heart{
+
+}
+.heart:hover .heart-icon{
+	transform: scale(1.6);	
+}
+.heart-bg{
+}
+.heart-icon{
+}
+.heart-bg:hover{
+	fill: #ff5e5e;
+}
+.heart-icon:hover{
+
+}
+/* --------------------------
+  Badge
+--------------------------- */
+.badge{
+	
+}
+.badge *{
+	transform-origin: 50% 50%;
+}
+.badge-outer{
+	animation: grow 1s ease-out backwards;
+}
+.badge-inner{
+	animation: grow 1s ease-out backwards;
+	animation-delay: .1s;
+}
+.badge-inline{
+	animation: grow 1s ease-out backwards;
+	animation-delay: .15s;
+}
+.badge-star{
+	animation: turn 1.1s .2s ease-out backwards;
+}
+.badge-point{
+	animation: pulse .7s 1.5s ease-out backwards;	
+}
+.badge-point:nth-of-type(2){
+	animation-delay: 1.6s;
+}
+.badge-point:nth-of-type(3){
+	animation-delay: 1.7s;
+}
+.badge-point:nth-of-type(4){
+	animation-delay: 1.8s;
+}
+.badge-point:nth-of-type(5){
+	animation-delay: 1.9s;
+}
+/* --------------------------
+  Badge Keyframes
+--------------------------- */
+@keyframes grow{
+	0%{
+		transform: scale(0);
+	}
+	30%{
+		transform: scale(1.1);
+	}
+	60%{
+		transform: scale(0.9);
+	}
+}
+@keyframes turn{
+	0%{
+		transform: rotate(0) scale(0);
+		opacity: 0;
+	}
+	60%{
+		transform: rotate(375deg) scale(1.1);
+		opacity: 0.5;
+	}
+	80%{
+		transform: rotate(355deg) scale(0.9);
+		opacity: 0.75;
+	}
+	100%{
+		transform: rotate(360deg) scale(1.0);
+		opacity: 1;
+	}
+}
+@keyframes pulse{
+	50%{
+		transform: scale(1.4);
+	}
+}
+/* --------------------------
+  Tree
+--------------------------- */
+.tree-path{
+	stroke: #6fbc6d;
+	stroke-width: 2;
+	/*stroke-dasharray: 5; dashed line*/
+	stroke-dasharray: 810;
+	stroke-dashoffset: 810;
+
+	animation: offset 5s linear forwards, fill .8s 5s linear forwards;
+}
+/* --------------------------
+  Tree Keyframes
+  var path = document.querySelector('.logo');
+var length = path.getTotalLength();
+--------------------------- */
+@keyframes offset{
+	100%{
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes fill{
+	100%{
+		fill: #6fbc6d;
+	}
+}

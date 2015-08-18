@@ -1,0 +1,6 @@
+if you want the page /foo in your app, you will have the following:
+a foo template,
+a FooRoute,
+a FooController,
+and a FooView.
+

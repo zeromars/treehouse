@@ -1,0 +1,9 @@
+Notes
+
+JavaScript Animation Libraries
+
+Snap.svg
+Velocity.js
+GSAP (GreenSock Animation Platform)
+
+-only animate inline svgs with css

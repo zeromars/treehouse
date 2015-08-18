@@ -1,0 +1,30 @@
+Atomic Design
+-framework pitfalls
+	-lookalike issues
+	-one size fits all
+	-bloat
+	-might not do everything you need
+	-compatibility
+	-subscribe to someone else's naming
+-Libraries
+	-fivesimplesteps.com/products/front-end-style-guides
+	-http://gim.ie/fZyK
+	-http://brettjankord.com/projects/style-guide-boilerplate
+	-http://patternprimer.adactio.com
+	-http://malarkey.github.io/Rock-Hammer
+	-http://barebones.paulrobertlloyd.com
+	-pea.rs
+	-pattern-lab.info
+	-ish
+-Atoms
+	-labels
+	-inputs
+-Molecules
+	-text field + a button
+-Organisms
+	-header
+	-footer
+-Templates
+	-wireframe
+-Pages
+	-rendered page
