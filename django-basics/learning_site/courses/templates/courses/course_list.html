@@ -1,0 +1,14 @@
+{% extends "layout.html "%}
+
+{% block title %}Course List{%endblock%}
+
+{% block content %}
+<div class="cards">
+    {% for course in courses %}
+        <div class="card">
+            <h2><a href="{% url 'courses:detail' pk=course.pk %}">{{ course.title }}</a></h2>
+            <p class="card-copy">{{ course.description }}</p>
+        </div>
+    {% endfor %}
+</div>
+{%endblock%}

@@ -1,0 +1,3 @@
+{% for course in courses %}
+    <p><a href="{% url 'courses:detail' pk=course.pk %}">{{course.title}}</a></p>
+{% endfor %}

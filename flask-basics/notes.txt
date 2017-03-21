@@ -1,0 +1,59 @@
+//create virtualenv
+python -m venv fb
+
+//launches idle using the current virtualenv
+python -m idlelib
+
+//lists everything you have installed
+pip freeze
+
+//lists everything you have installed listed to a file
+pip freeze > requirements.txt
+
+//exits virtualenv
+deactivate
+
+//installs based off requirements file
+pip install -r .\requirements.txt
+
+//searches for a package
+pip freeze | grep Flask
+
+//@ is a decorator that wraps around index telling it to be route /
+@app.route('/')
+def index():
+	return ""
+
+	
+""" Triple quotes let you hold onto line breaks
+return """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Adding!</title>
+</head>
+<body>
+	<h1>{} + {} = {}</h1>
+</body>
+</html>
+""".format(num1, num2, num1+num2)
+
+templates is requirement for views
+
+** unpacks the context
+
+layout.html can be called anything
+
+static folder is needed for all static images (must be called that)
+
+tracing
+import pdb; pdb.set_trace()
+dir() //directory
+dir('request') //check for if request is there
+request.form
+ImmutableMultiDict([('name', 'koda')])
+c to let view continue
+
+
+

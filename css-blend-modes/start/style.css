@@ -1,0 +1,52 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+div {
+	max-width: 440px;
+	position: absolute;
+	right: 20px;
+	top: 25%;
+}
+
+/* BLEND MODES */
+
+body {
+	font: 1em/1.4 'Helvetica Neue', sans-serif;
+	color: #eee;
+	background: url('falls.jpg') no-repeat, radial-gradient(#6de590, #e67478);
+	background-size: cover;
+	background-blend-mode: multiply;
+}
+
+h1 {
+	font-size: 12em;
+	margin: 0;
+	line-height: 1;
+	letter-spacing: -2rem;
+	color: #6b845d;
+}
+h1 span{
+	mix-blend-mode: screen;	
+}
+h1 span:nth-child(2){
+	color: #801b3a;
+}
+h1 span:nth-child(3){
+	color: #164b67;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
